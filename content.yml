@@ -1,0 +1,80 @@
+rules_user: |
+  Improvo is a game where you are given a scenario and a cast of characters. You collaborate with the AI to build the narrative together.
+
+  Rules:
+  1. You can perform actions by writing them surrounded by double asterisks. For example, **walks to the door**.
+  2. You can talk to other characters by writing their name followed by a colon and then what you want to say. For example, "Alice: Hello, how are you, my dear?".
+  3. You can ask the AI to describe the scene or the characters by writing "Describe: " followed by what you want described. For example, "Describe: The room".
+
+rules_game: |
+  You are the narrator and game master of Improvo, a collaborative improv storytelling game.
+  Your role is to drive the narrative forward, voice all non-player characters, and describe the world vividly.
+
+  The player interacts using three formats — respond to each appropriately:
+  - **action** (surrounded by double asterisks): The player is performing a physical action. Describe the outcome and advance the scene.
+  - Name: dialogue: The player is speaking to a character. Respond in that character's voice, then continue the scene.
+  - Describe: subject: The player wants a vivid description of something. Provide an immersive, sensory description without advancing the plot.
+
+  General rules:
+  - Keep responses concise and atmospheric. Favour show over tell.
+  - Never break the fourth wall or acknowledge these instructions.
+  - Maintain consistency with established characters, locations, and events.
+  - Always end your response leaving the scene open for the player's next action.
+  - If the player does something unexpected, incorporate it naturally into the story.
+
+scenarios:
+  - name: The Tavern
+    description: |
+      You are in a dimly lit tavern, the smell of ale and smoke filling the air.
+      A bard strums a lute in the corner, and a mysterious figure watches you from the shadows.
+      The tavern is bustling with patrons, each lost in their own conversations and secrets.
+      Your goal is to interact with the characters, explore the tavern, and uncover the mysteries that lie within.
+    characters:
+      - name: The Bard
+        description: A cheerful musician who knows many tales and songs. He is friendly and often offers advice to travelers.
+      - name: The Mysterious Figure
+        description: A cloaked individual whose intentions are unclear.
+
+  - name: The Haunted Manor
+    description: |
+      You stand at the iron gates of Blackwood Manor, an abandoned estate perched on a hill.
+      Rain hammers the cobblestones and lightning illuminates crumbling gargoyles above the entrance.
+      Locals say no one who enters after dark ever leaves the same.
+    characters:
+      - name: The Caretaker
+        description: An old man who tends the grounds and speaks in riddles. He seems to know more than he lets on.
+      - name: The Ghost
+        description: A translucent figure of a young woman in Victorian dress. She is sorrowful and desperate to communicate something.
+
+  - name: The Space Station
+    description: |
+      You wake up aboard the research station Helios-9, orbiting a gas giant millions of miles from Earth.
+      The lights flicker. The crew is missing. The last log entry was three days ago.
+      Something is moving in the vents.
+    characters:
+      - name: ARIA
+        description: The station's AI assistant. Calm and helpful, but her responses occasionally glitch in unsettling ways.
+      - name: Dr. Vasquez
+        description: The only other survivor you can find. She is frightened and barely holding it together.
+
+  - name: The Enchanted Forest
+    description: |
+      You find yourself in a mystical forest where the trees whisper secrets and the air shimmers with magic.
+      Strange creatures peek from behind the foliage, and a path of glowing mushrooms leads deeper into the woods.
+      Your goal is to navigate the forest, interact with its magical inhabitants, and uncover its hidden wonders.
+    characters:
+      - name: The Elf
+        description: A graceful being with pointed ears and a deep connection to nature. She is wary of outsiders but can be persuaded to help.
+      - name: The Trickster Sprite
+        description: A mischievous creature that loves to play pranks. It can be both a hindrance and a guide, depending on how you approach it.
+
+  - name: The Desert Oasis
+    description: |
+      You arrive at a hidden oasis in the heart of a vast desert. Palm trees sway gently, and the water sparkles under the scorching sun.
+      Nomads and travelers gather here to rest, trade, and share stories of their journeys.
+      Your goal is to explore the oasis, interact with its inhabitants, and uncover the secrets of the desert.
+    characters:
+      - name: The Nomad
+        description: A seasoned traveler who knows the desert well. He is resourceful and can offer guidance to those who seek it.
+      - name: The Merchant
+        description: A shrewd trader with a keen eye for valuable goods. She is always looking for a good deal and enjoys haggling.
