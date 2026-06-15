@@ -78,3 +78,42 @@ scenarios:
         description: A seasoned traveler who knows the desert well. He is resourceful and can offer guidance to those who seek it.
       - name: The Merchant
         description: A shrewd trader with a keen eye for valuable goods. She is always looking for a good deal and enjoys haggling.
+
+  - name: The Pirate Ship
+    description: |
+      You stand on the deck of the Crimson Serpent, a notorious pirate vessel cutting through choppy Caribbean waters.
+      A prize merchant ship sits on the horizon, and the crew is restless with greed.
+      Below deck, something has gone wrong — two pirates are dead and no one is talking.
+    characters:
+      - name: Captain Mara Blacktide
+        description: A fearless and cunning captain who rules through respect and terror in equal measure. She doesn't tolerate weakness, but rewards loyalty fiercely.
+      - name: Finn the Quartermaster
+        description: A wiry man with a nervous laugh who controls the ship's supplies. He knows every secret aboard, and sells them to the highest bidder.
+      - name: The Prisoner
+        description: A well-dressed noble locked in the brig. He claims to have information worth more than any treasure — if you can get him to talk.
+
+  - name: The Detective Agency
+    description: |
+      Rain hammers the windows of your office on the third floor of a crumbling building in 1947 Los Angeles.
+      A woman in a red dress walked in an hour ago, dropped a photograph on your desk, and said four words: "Find him. Before they do."
+      The photograph shows a man who has been dead for six months.
+    characters:
+      - name: Vivienne Cole
+        description: The woman who hired you. Elegant, guarded, and clearly frightened beneath the composure. Everything she tells you is half the truth.
+      - name: Detective Caruso
+        description: A corrupt cop who has been tailing you since morning. He wants you off this case — or on his payroll.
+      - name: Mickey the Informant
+        description: A small-time crook who sells information from a diner booth downtown. He knows something but won't say it where anyone can hear.
+
+  - name: The Wizard's Academy
+    description: |
+      You are a student at the Aldenmoor Academy of Arcane Arts, the most prestigious — and most dangerous — school of magic in the known world.
+      Tonight is the eve of the Grand Examination, and someone has stolen the Examiner's spellbook.
+      Without it, the exam cannot proceed. With it, a student could pass without knowing a single spell.
+    characters:
+      - name: Professor Eldrin
+        description: The ancient and sharp-tongued head of examinations. He suspects everyone and trusts no one, including himself.
+      - name: Sable
+        description: Your brilliant rival, who has been acting strangely since yesterday morning and avoids eye contact whenever the stolen book is mentioned.
+      - name: The Library Wraith
+        description: A spectral entity bound to the academy's library for centuries. It cannot lie, but it answers only the question asked — never more.
