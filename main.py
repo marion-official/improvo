@@ -43,6 +43,7 @@ def chat(client, model, messages, system):
     message = client.messages.create(
         model=model,
         max_tokens=1000,
+        temperature=1.0,
         system=system,
         messages=messages,
     )
