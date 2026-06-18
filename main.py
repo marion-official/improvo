@@ -40,14 +40,18 @@ def add_assistant_message(messages, text):
 
 
 def chat(client, model, messages, system):
-    message = client.messages.create(
+    with client.messages.stream(
         model=model,
         max_tokens=1000,
         temperature=1.0,
         system=system,
         messages=messages,
-    )
-    return message.content[0].text
+    ) as stream:
+        print("\n")
+        for text in stream.text_stream:
+            print(text, end="", flush=True)
+        print("\n")
+        return stream.get_final_text()
 
 
 if __name__ == '__main__':
@@ -80,5 +84,4 @@ if __name__ == '__main__':
 
         add_user_message(messages, user_input)
         response = chat(client, model, messages, system)
-        print(f"\n{response}\n")
         add_assistant_message(messages, response)
