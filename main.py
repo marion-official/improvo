@@ -40,12 +40,25 @@ def add_assistant_message(messages, text):
 
 
 def chat(client, model, messages, system):
+    # Cache the last assistant turn so the growing conversation prefix is reused.
+    messages_to_send = []
+    last_assistant_idx = len(messages) - 2  # second-to-last when new user msg is last
+    for i, msg in enumerate(messages):
+        if msg["role"] == "assistant" and i == last_assistant_idx:
+            messages_to_send.append({
+                "role": "assistant",
+                "content": [{"type": "text", "text": msg["content"],
+                              "cache_control": {"type": "ephemeral"}}],
+            })
+        else:
+            messages_to_send.append(msg)
+
     with client.messages.stream(
         model=model,
         max_tokens=1000,
         temperature=1.0,
-        system=system,
-        messages=messages,
+        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+        messages=messages_to_send,
     ) as stream:
         print("\n")
         for text in stream.text_stream:
